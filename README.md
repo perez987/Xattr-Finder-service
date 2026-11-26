@@ -1,6 +1,6 @@
 # Remove-quarantine: Finder service in a minimal app
 
-*[Versión en español](README-ES.md)*
+<!-- *[Versión en español](README-ES.md)* -->
 
 A minimal macOS app with no window and no Dock icon. Its only purpose is to provide the **Remove quarantine** service in the Finder context menu. Because the service is declared by an application (like Terminal's "New Terminal at Folder"), it appears at the **top level** of the context menu, not inside *Quick Actions*.
 
