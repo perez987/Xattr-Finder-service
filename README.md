@@ -112,8 +112,21 @@ The result is `build/Remove-quarantine.zip`, ready to distribute.
 
 ## Adding a language
 
-Create `Resources/<code>.lproj/ServicesMenu.strings` with the translated title, add the code to `CFBundleLocalizations` in `Info.plist`, and rebuild:
+1.- Create `Resources/<language_code>.lproj/ServicesMenu.strings` with the translated title
 
+`"Remove quarantine" = "<translated title>";`
+
+2.- Add the code to `CFBundleLocalizations` in `Info.plist`:
+
+```xml
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>es</string>
+		<string>pt-BR</string>
+	</array>
 ```
-"Remove quarantine" = "<translated title>";
-```
+
+3.- Rebuild:
+
+`./build.sh && ./install.sh`
