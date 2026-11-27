@@ -4,6 +4,8 @@
 
 A minimal macOS app with no window and no Dock icon. Its only purpose is to provide the **Remove quarantine** service in the Finder context menu. Because the service is declared by an application (like Terminal's "New Terminal at Folder"), it appears at the **top level** of the context menu, not inside *Quick Actions*.
 
+This is a very simple way to remove the `com.apple.quarantine` extended attribute from files downloaded from the Internet. Right-click on a file → Remove quarantine. There are no messages or application windows; the attribute is simply removed, allowing the file—often an app created by an independent developer without an Apple Developer account—to be opened without any issues from Gatekeeper.
+
 ![Finder service](Finder-service.png)
 
 ## What it does
